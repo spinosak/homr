@@ -1,0 +1,4 @@
+git+https://github.com/liebharc/homr
+pdf2image
+git+https://github.com/papoteur-mga/relieur
+streamlit

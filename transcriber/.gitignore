@@ -1,0 +1,6 @@
+# Project specific
+.DS_Store
+output_pages/
+test.pdf
+test.png
+output/
