@@ -69,7 +69,7 @@ if uploaded_file and not st.session_state.get("output_xml"):
                     try:
                         process_image(filepath, config, XmlGeneratorArguments())
                     except Exception as e:
-                        st.warning(f"Page {filename} doesn't appear to contain sheet music — skipping.")
+                        st.warning(f"Error on {filename}: {str(e)}")
 
         with st.spinner("Merging pages..."):
             xml_files = sorted([
