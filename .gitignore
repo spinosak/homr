@@ -84,3 +84,5 @@ pyproject.toml
 .cspell-dictionaries/
 LICENSE
 README.md
+
+!packages.txt
