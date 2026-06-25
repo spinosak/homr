@@ -79,7 +79,7 @@ if uploaded_file and not st.session_state.get("output_xml"):
             ])
             output_xml = os.path.join(output_folder, f"{pdf_name}.musicxml")
             homr_folder = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-            subprocess.run(["poetry", "run", "relieur"] + xml_files + ["-o", output_xml], cwd=homr_folder)
+            subprocess.run([sys.executable, "-m", "relieur.relieur"] + xml_files + ["-o", output_xml])
 
         if os.path.exists(output_xml):
             st.session_state.output_xml = output_xml
