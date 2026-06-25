@@ -3,9 +3,9 @@ import tempfile
 import os
 import sys
 import shutil
-from homr.download_utils import download_weights
+from homr.main import process_image, ProcessingConfig, download_weights
 
-download_weights()
+download_weights(use_gpu_inference=False)
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
