@@ -3,6 +3,9 @@ import tempfile
 import os
 import sys
 import shutil
+from homr.download_utils import download_weights
+
+download_weights()
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
