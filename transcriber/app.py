@@ -54,7 +54,10 @@ if uploaded_file and not st.session_state.get("output_xml"):
             enable_cache=False,
             write_staff_positions=False,
             read_staff_positions=False,
-            selected_staff=-1
+            selected_staff=-1,
+            transformer_use_gpu=False,
+            segnet_use_gpu=False,
+            coreml_encoder=None
         )
 
         with st.spinner("Reading sheet music (this takes a moment)..."):
